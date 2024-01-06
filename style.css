@@ -118,3 +118,9 @@ nav input {
   width: 70%;
   margin: 2% 2% 2% 0;
 }
+.b-right > div {
+}
+button {
+  background-color: black;
+  color: white;
+}
