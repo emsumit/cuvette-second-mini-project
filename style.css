@@ -47,12 +47,38 @@ div {
   border-radius: 15px;
   /* border: solid 2px black; */
 }
+p {
+  line-height: 1.8;
+}
+
 .container {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 7%;
 }
+.sharebtn {
+  position: fixed;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%) translateX(15%);
+  /* transition: top 0.3s ease; */
+}
+.sharebtn > img {
+  height: auto;
+  width: 80%;
+}
+.chatbox {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  transform: translateY(25%) translateX(-40%);
+}
+.chatbox > img {
+  height: auto;
+  width: 65%;
+}
+
 .main {
   width: 75vw;
   display: grid;
@@ -124,6 +150,7 @@ div {
 }
 
 .b-left {
+  padding: 2%;
   width: 30%;
   height: 500px;
   display: flex;
@@ -142,12 +169,18 @@ div {
 }
 .b-right {
   background-color: white;
-
+  color: #04285a;
   width: 70%;
   margin: 2% 2% 2% 0;
+  position: relative;
 }
 .b-right > div {
   margin: 7%;
+  line-height: 1.8;
+}
+.b-right > div > p {
+  line-height: 2.2;
+  color: #143565;
 }
 button {
   font-size: 1.2rem;
@@ -156,6 +189,9 @@ button {
   border-radius: 9px;
   background-color: black;
   color: white;
+  position: absolute;
+  right: 5%;
+  bottom: 5%;
 }
 button > img {
   height: auto;
